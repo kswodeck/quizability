@@ -1,0 +1,8 @@
+{
+  "name": "Quizability",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "1a44d385"
+}
