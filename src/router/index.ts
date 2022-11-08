@@ -5,27 +5,27 @@ import TabsPage from '../views/TabsPage.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: '/tabs/take', // typically would be the home page. But perhaps Take Quizzes will be home page?
   },
   {
     path: '/tabs/',
-    component: TabsPage,
+    component: TabsPage, // requested on application load
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/tabs/take'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        path: 'take',
+        component: () => import('@/views/take/TakeQuizzes.vue') // lazy loaded
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'create',
+        component: () => import('@/views/create/CreateQuizzes.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
+        path: 'browse',
+        component: () => import('@/views/browse/BrowseQuizzes.vue')
       }
     ]
   }

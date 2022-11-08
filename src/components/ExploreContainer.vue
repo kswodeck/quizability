@@ -9,10 +9,10 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'ExploreContainer',
+  name: 'explore-container',
   props: {
-    name: String
-  }
+    name: String,
+  },
 });
 </script>
 

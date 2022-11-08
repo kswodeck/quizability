@@ -3,19 +3,19 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
+        <ion-tab-button tab="tab1" href="/tabs/take">
           <ion-icon :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
+          <ion-label>Take Quizzes</ion-label>
         </ion-tab-button>
           
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
+        <ion-tab-button tab="tab2" href="/tabs/create">
           <ion-icon :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+          <ion-label>Create Quizzes</ion-label>
         </ion-tab-button>
         
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
+        <ion-tab-button tab="tab3" href="/tabs/browse">
           <ion-icon :icon="square" />
-          <ion-label>Tab 3</ion-label>
+          <ion-label>Browse Quizzes</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
